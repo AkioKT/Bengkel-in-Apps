@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: "Orbitron", sans-serif;
+    }
+
+    nav h1 {
+        font-family: "Orbitron", sans-serif;
+    }
+</style>
+
+<body class="bg-[#030712]" id="body">
+    <header class="w-full bg-[#030712] items-center p-4 flex flex-row border-b-2 border-gray-900 lg:pl-6 lg:pr-6" id="header">
+        <nav class="w-full flex items-center justify-between">
+            <img class="w-14" src="/assets/LOGO 2.png" alt="">
+            <ul class="hidden md:flex md:gap-6 lg:gap-10">
+                <li><a href="" class="text-white text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-200 hover:after:w-full">Home</a></li>
+                <li><a href="" class="text-white text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-200 hover:after:w-full">Services</a></li>
+                <li><a href="" class="text-white text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-200 hover:after:w-full">Sparepart</a></li>
+                <li><a href="" class="text-white text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-200 hover:after:w-full">Contact</a></li>
+            </ul>
+
+            <div class="relative z-10 md:hidden">
+                <button class="text-white focus:outline-none hover:cursor-pointer" id="hamburgerbar">
+                    <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- NAVBAR MOBILE -->
+            <div class="absolute z-[1] w-full top-0.5 right-0 bg-[#030712] -translate-y-60 transition duration-350 ease-in-out md:hidden" id="navbarmobile">
+                <a href="#" class="block py-4 px-8 text-white border-b-2 border-gray-900">Home</a>
+                <a href="#" class="block py-4 px-8 text-white border-b-2 border-gray-900">Services</a>
+                <a href="#" class="block py-4 px-8 text-white border-b-2 border-gray-900">Sparepart</a>
+                <a href="#" class="block py-4 px-8 text-white border-b-2 border-gray-900">Contact</a>
+            </div>
+        </nav>
+    </header>
+        <!--  -->
+    <div class="h-screen relative">
+        <div class="flex flex-col items-center gap-10 p-10 md:gap-20 lg:gap-32 lg:flex-row lg:justify-between lg:items-start lg:rounded-xl  ">
+            <div class="flex flex-col justify-center items-center gap-2 lg:items-start lg:justify-start lg:gap-6">
+                <h1 class="text-yellow-500 font-bold text-xl text-center md:text-2xl lg:text-5xl lg:text-start">
+                    <span class="inline lg:block">Anda ingin</span>
+                    <span class="inline lg:block">menggunakan</span>
+                    <span class="inline lg:block">Bengkel-in</span>
+                    <span class="inline lg:block">sebagai apa?</span>
+                </h1>
+                <h1 class="text-sm text-white text-center md:text-lg lg:text-3xl lg:text-start">
+                    <span class="inline lg:block">Kami menanyakan ini untuk</span>
+                    <span class="inline lg:block">menyesuaikan preferensi anda</span>
+                    </h1>
+            </div>
+            <div class="flex flex-col gap-3 rounded-2xl p-8 bg-[#101b38]">
+                <button class="flex items-center rounded-2xl p-2 bg-[#030712] hover:cursor-pointer hover:bg-[#424a61] transition-transform duration-500 ease-in-out hover:scale-110 md:w-64 md:h-20 lg:w-96 lg:h-24" id="btnMekanik">
+                    <img src="/assets/OBENG.png" alt="" class="w-14">
+                    <h1 class="text-white text-sm">Mekanik</h1>
+                </button>
+                <button class="flex left- items-center rounded-2xl p-2 bg-[#030712] hover:cursor-pointer hover:bg-[#424a61] transition-transform duration-500 ease-in-out hover:scale-110 md:w-64 md:h-20 lg:w-96 lg:h-24" id="btnPemilikBengkel">
+                    <img src="/assets/GEAR.png" alt="" class="w-14">
+                    <h1 class="text-white text-sm">Pemilik Bengkel</h1>
+                </button>
+                <button class="flex items-center rounded-2xl p-2 bg-[#030712] hover:cursor-pointer hover:bg-[#424a61] transition-transform duration-500 ease-in-out hover:scale-110 md:w-64 md:h-20 lg:w-96 lg:h-24" id="btnCustomer">
+                    <img src="/assets/USER.png" alt="" class="w-14">
+                    <h1 class="text-white text-sm">Customer</h1>
+                </button>
+            </div>
+        </div>
+
+        <div class="w-full p-2 absolute bottom-0">
+            <h1 class="text-white text-center text-xs md:text-lg">©2025 Bengkel-in Apps</h1>
+        </div>
+    </div>
+
+    <div>
+        <!-- LOGIN LAYOUT -->
+        <div class="hidden justify-center items-center absolute w-full h-full top-0 bg-[#0000008a]" id="loginlayout">
+            <form method="POST" class="w-96 bg-[#101b38] p-10 rounded-xl" id="loginform">
+                <button type="reset" class="text-white font-semibold text-xl hover:cursor-pointer" id="closeLoginButton">X</button>
+                <h1 class="text-center text-white md:text-xl">Log in</h1>
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-600">Username</label>
+                        <input placeholder="Masukkan Username" type="text" id="username" name="username" required class="w-full px-4 py-2 mt-1 text-sm text-white border rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 placeholder:text-gray-700">
+                        <p class="text-gray-400 text-xs">clue : admin</p>
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
+                        <input placeholder="Masukkan Password" type="password" id="password" name="password" required class="w-full px-4 py-2 mt-1 text-sm text-white border rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 placeholder:text-gray-700">
+                        <p class="text-gray-400 text-xs">clue : admin#1234</p>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600" id="submitLoginButton">Login</button>
+                        <p class="text-white text-xs">note : login page cuma gimik</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- ALERT -->
+        <div id="customAlert" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <p class="text-lg font-semibold">Ini adalah alert kustom!</p>
+                <button onclick="closeAlert()" class="mt-4 px-4 py-2 bg-red-500 text-white rounded-md">Tutup</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    const hamburgerbar = document.getElementById("hamburgerbar");
+    hamburgerbar.addEventListener("click", function () {
+        const menu = document.getElementById("navbarmobile");
+        menu.classList.toggle("-translate-y-60");
+    });
+
+    const mekanik = document.getElementById("btnMekanik");
+    mekanik.addEventListener("click", function () {
+        const login = document.getElementById("loginlayout");
+        const loginForm = document.getElementById("loginform");
+        const body = document.getElementById("body");
+        login.classList.replace("hidden", "flex");
+    });
+    const pemilikBengkel = document.getElementById("btnPemilikBengkel");
+    pemilikBengkel.addEventListener("click", function () {
+        const login = document.getElementById("loginlayout");
+        const loginForm = document.getElementById("loginform");
+        const body = document.getElementById("body");
+        login.classList.replace("hidden", "flex");
+    });
+    const customer = document.getElementById("btnCustomer");
+    customer.addEventListener("click", function () {
+        const login = document.getElementById("loginlayout");
+        const loginForm = document.getElementById("loginform");
+        const body = document.getElementById("body");
+        login.classList.replace("hidden", "flex");
+    });
+
+    const notyf = new Notyf();
+    function showNotyfError() {
+        notyf.error("Kayaknya typo deh, miss :)");
+    }
+
+    function emptyInput() {
+        notyf.open({
+        type: 'info', 
+        message: 'Ini adalah custom alert!',
+        background: '#3498db', // Warna custom
+        });
+    }
+
+    const closeLogin = document.getElementById("closeLoginButton");
+    closeLogin.addEventListener("click", function () {
+        const login = document.getElementById("loginlayout");
+        const body = document.getElementById("body");
+        login.classList.replace("flex", "hidden");
+    });
+
+    document.getElementById("loginform").addEventListener("submit", function (event) {
+        event.preventDefault(); // Mencegah form submit secara default
+
+        var username = document.getElementById("username").value.trim();
+        var password = document.getElementById("password").value.trim();
+        if (!username || !password) { 
+            emptyInput();
+            return; // Hentikan eksekusi lebih lanjut
+        }
+
+        if (username === "admin" && password === "admin#1234") {
+            window.location.href = 'mekanik.html';
+        } else {
+            showNotyfError(); // Fungsi ini harus didefinisikan atau diganti dengan alert()
+        }
+    });
+
+
+</script>

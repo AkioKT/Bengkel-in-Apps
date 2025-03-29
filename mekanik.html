@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> -->
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: "Orbitron", sans-serif;
+    }
+    nav h1 {
+        font-family: "Orbitron", sans-serif;
+    }
+</style>
+<body class="bg-[#030712]">
+    <header class="w-full bg-[#030712] items-center p-4 flex flex-row border-b-2 border-gray-900 lg:pl-6 lg:pr-6" id="header">
+        <nav class="w-full flex items-center justify-between">
+            <img class="w-14" src="/assets/LOGO 2.png" alt="">
+            <ul class="hidden md:flex md:gap-6 lg:gap-10">
+                <li><a href="" class="text-white text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-200 hover:after:w-full">Home</a></li>
+                <li><a href="" class="text-white text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-200 hover:after:w-full">Services</a></li>
+                <li><a href="" class="text-white text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-200 hover:after:w-full">Sparepart</a></li>
+                <li><a href="" class="text-white text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-white after:transition-all after:duration-200 hover:after:w-full">Contact</a></li>
+            </ul>
+
+            <div class="relative z-10 md:hidden">
+                <button class="text-white focus:outline-none hover:cursor-pointer" id="hamburgerbar">
+                    <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- NAVBAR MOBILE -->
+            <div class="absolute w-full top-0.5 right-0 bg-[#030712] -translate-y-60 transition duration-350 ease-in-out md:hidden" id="navbarmobile">
+                <a href="#" class="block py-4 px-8 text-white border-b-2 border-gray-900">Home</a>
+                <a href="#" class="block py-4 px-8 text-white border-b-2 border-gray-900">Services</a>
+                <a href="#" class="block py-4 px-8 text-white border-b-2 border-gray-900">Sparepart</a>
+                <a href="#" class="block py-4 px-8 text-white border-b-2 border-gray-900">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="pr-6 pl-6 pt-6 flex flex-col">
+        <div class="bg-red-4 grid grid-cols-2 gap-2">
+            <div class="flex flex-col gap-8 sm:gap-12 md:gap-16 lg:gap-30">
+                <div>
+                    <h1 class="text-white text-[15px] font-bold sm:text-[20px] md:text-3xl lg:text-4xl ">Bengkel-in <span class="text-yellow-400">Apps</span></h1>
+                    <p class="text-white text-[10px] sm:text-[15px] md:text-xl">
+                        adalah platform layanan online yang menghubungkan pemilik kendaraan 
+                        dengan mekanik, bengkel, dan pemasok suku cadang.</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="text-yellow-400 font-bold text-[10px] sm:text-[15px] lg:text-[17px]">Dengan bengkel-in, masalah loe dikelarin!</p>
+                    <button id="exploreButton" class="text-white text-[10px] border-2 border-[#1a2332] pl-8 pr-8 p-2 rounded-4xl hover:cursor-pointer hover:bg-[#1a2332] md:text-[15px]">Explore</button>
+                    <div class="flex flex-row w-full">
+                        <button class="">
+                            <img src="/assets/Playstore.png" alt="" class="w-30">
+                        </button>
+                        <button>
+                            <img src="/assets/Appstore.png" alt="" class="w-[90px] border-[1px] border-[#909090] rounded-sm">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid place-items-end">
+                <img src="/assets/Iphone 1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-6 pr-6 pl-6 pb-6" id="kategoriPilihan">
+        <div class="bg-[#1a2332] p-4 rounded-xl border-6 border-double border-[#10141e] flex flex-col gap-12">
+            <h1 class=" text-yellow-400 text-xs sm:text-base md:text-lg">Kategori Pilihan</h1>
+            <div class="w-full grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4 place-items-center sm:grid-cols-3 md:grid-cols-5">
+                <div class="flex flex-col gap-4 items-center hover:cursor-pointer kategori">
+                    <img src="/assets/MACHINE.png" alt="" class="w-20 md:w-28">
+                    <h1 class="text-white text-xs font-bold">Blok Mesin Motor</h1>
+                </div>
+                <div class="flex flex-col gap-4 items-center hover:cursor-pointer kategori">
+                    <img src="/assets/GASOIL.png" alt="" class="w-20 md:w-28">
+                    <h1 class="text-white text-xs font-bold">Oli Mesin</h1>
+                </div>
+                <div class="flex flex-col gap-4 items-center hover:cursor-pointer kategori">
+                    <img src="/assets/GASOIL2.png" alt="" class="w-16">
+                    <h1 class="text-white text-xs font-bold">Oli Samping</h1>
+                </div>
+                <div class="flex flex-col gap-4 items-center hover:cursor-pointer kategori">
+                    <img src="/assets/BRAKE.png" alt="" class="w-20 md:w-24">
+                    <h1 class="text-white text-xs font-bold">Big Brake Kit</h1>
+                </div>
+                <div class="flex flex-col gap-4 items-center hover:cursor-pointer kategori">
+                    <img src="/assets/STEERING.png" alt="" class="w-20 md:w-24">
+                    <h1 class="text-white text-xs font-bold">Setir Kemudi</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between gap-4">
+            <div class="flex flex-row justify-between gap-4">
+                <h1 class="text-yellow-400">[CATEGORY]</h1>
+                <label for="category"></label>
+                <!-- PENCARIAN >= SM (640PX) -->
+                <input type="text" placeholder="Cari Sparepart" class="hidden w-full p-1 pl-4 border border-gray-300 text-white text-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:block">
+                <a href="" class="text-white font-bold">View</a>
+            </div>
+            <div>
+                <!-- PENCARIAN <= SM 640(PX)-->
+                <input type="text" placeholder="Cari Sparepart" class="block w-full p-1 pl-4 border border-gray-300 text-white text-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:hidden">
+            </div>
+        </div>
+        <div class="rounded-xl grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+        <div class="rounded-xl grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="bg-[#1a2332] flex flex-col rounded-xl p-2 gap-8 hover:scale-105 transition-transform duration-200 ease-in-out border-6 border-double border-[#10141e] hover:cursor-pointer">
+                <div class="flex justify-center w-full">
+                    <img src="/assets/SPAREPART.png" alt="Product" class="w-24 text-center sm:w-32 md:w-36 lg:w-40 sparepart">
+                </div>
+                <div>
+                    <h1 class="text-yellow-400 text-sm font-bold">Product</h1>
+                    <p class="text-white text-xs">Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="flex flex-col bg-[#1a2332] p-4 gap-4 border-t-2 border-[#1e2128]">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-20">
+            <div>
+                <h1 class="text-white font-bold text-sm md:text-base">Bengkel_IN <span class="text-yellow-400">Apps</span> <span class="font-normal">adalah platform layanan online 
+                    yang menghubungkan pemilik kendaraan dengan mekanik, 
+                    bengkel, dan pemasok suku cadang</span></h1>
+            </div>
+            <div>
+                <ul class="flex flex-col gap-4">
+                    <li><a href="" class="text-white text-sm md:text-base">Home</a></li>
+                    <li><a href="" class="text-white text-sm md:text-base">Services</a></li>
+                    <li><a href="" class="text-white text-sm md:text-base">Sparepart</a></li>
+                    <li><a href="" class="text-white text-sm md:text-base">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex gap-4 flex-row items-center">
+            <a href="" class="text-white font-bold text-3xl">f</a>
+            <a href="" class="text-white font-bold text-3xl">X</a>
+            <a href=""><img src="/assets/Insta.png" alt="" class="w-7"></a>
+            <a href=""><img src="/assets/Mail.png" alt="" class="w-8"></a>
+            <a href=""><img src="/assets/Youtube.png" alt="" class="w-10"></a>
+        </div>
+        <div>
+            <h1 class="text-white text-center">©2025 Bengkel-in Apps</h1>
+        </div>
+    </footer>
+</body>
+
+<script>
+    document.addEventListener("scroll", function onScroll() {
+        document.removeEventListener("scroll", onScroll); // Hanya load sekali
+
+        let script = document.createElement("script");
+        script.src = "https://unpkg.com/scrollreveal";
+        script.onload = function () {
+            ScrollReveal().reveal('.kategori',{ 
+                duration: 400, // Durasi animasi (ms)
+                scale: 0.5, // Skala awal sebelum muncul (0.5 berarti 50% ukuran normal)
+                origin: "bottom", // Efek masuk dari bawah (opsional)
+                distance: "50px", // Jarak gerakan elemen (opsional)
+                easing: "ease-in-out", // Efek pergerakan lebih halus
+                interval: 70,
+                reset: true,
+            });
+            ScrollReveal().reveal('.sparepart',{ 
+                duration: 400, // Durasi animasi (ms)
+                scale: 0.5, // Skala awal sebelum muncul (0.5 berarti 50% ukuran normal)
+                origin: "bottom", // Efek masuk dari bawah (opsional)
+                distance: "50px", // Jarak gerakan elemen (opsional)
+                easing: "ease-in-out", // Efek pergerakan lebih halus
+                interval: 70,
+                reset: true,
+            });
+        };
+        document.body.appendChild(script);
+    });
+
+    const hamburgerbar = document.getElementById("hamburgerbar");
+    hamburgerbar.addEventListener("click", function () {
+        const menu = document.getElementById("navbarmobile");
+        menu.classList.toggle("-translate-y-60");
+    });
+
+    const explorebtn = document.getElementById("exploreButton");
+
+    function smoothScrollTo(targetY, duration) {
+        let startY = window.scrollY;
+        let startTime = performance.now();
+
+        function scrollStep(timestamp) {
+            let currentTime = timestamp - startTime;
+            let progress = Math.min(currentTime / duration, 1);
+            let easeInOut = progress < 0.5 ? 2 * progress ** 2 : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+            let newY = startY + (targetY - startY) * easeInOut;
+
+            window.scrollTo(0, newY);
+            if (currentTime < duration) {
+                requestAnimationFrame(scrollStep);
+            }
+        }
+
+        requestAnimationFrame(scrollStep);
+        }
+
+        explorebtn.addEventListener("click", function () {
+        const kategori = document.getElementById("kategoriPilihan");
+        smoothScrollTo(kategori.offsetTop, 800); // Scroll selama 1.5 detik
+    });
+
+</script>
